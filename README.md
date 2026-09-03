@@ -4,6 +4,15 @@
 
 这个工具处理一个具体风险：使用自动化工具调整论文格式时，正文可能同时发生非预期修改。它不会把文档上传到网络，也不调用外部模型。
 
+## 工作原理 / How it works
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/docx-content-guard.dark.png">
+  <img src="docs/diagrams/docx-content-guard.light.png" alt="DOCX Content Guard 文档内容核查流程">
+</picture>
+
+<sub>主要处理路径、异常分支和人工检查点。 / The main processing path, exception branches, and human review points.</sub>
+
 ## 主要能力
 
 - 比较修改前后的正文段落
